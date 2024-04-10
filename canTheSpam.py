@@ -19,6 +19,17 @@
 # - You may need to adjust the account age threshold and keyword list based on the spam you have been receiving.
 
 
+# 📗 Standard library imports (no need to install)
+import re # Regular expression library (to find links in messages)
+from datetime import datetime, timedelta, timezone # For checking account age
+
+
+# 📘 Third-party library imports (install using pip)
+# # Below is the command to install the library
+# # pip install nextcord
+import nextcord # The Discord Bot API library
+
+
 # 👇 👇 👇 👇 👇 👇 👇 👇 👇 👇 👇 👇
 # ⚙️ Settings/configurable variables
 # # The threshold for the account age check
@@ -34,17 +45,6 @@ ADMIN_LOG_CHANNEL_ID = ...
 # # Replace with your bot token!
 DISCORD_BOT_TOKEN = ...
 # ☝️ ☝️ ☝️ ☝️ ☝️ ☝️ ☝️ ☝️ ☝️ ☝️ ☝️ ☝️ ☝️
-
-
-# 📗 Standard library imports (no need to install)
-import re # Regular expression library (to find links in messages)
-from datetime import datetime, timedelta, timezone # For checking account age
-
-
-# 📘 Third-party library imports (install using pip)
-# # Below is the command to install the library
-# # pip install nextcord
-import nextcord # The Discord Bot API library
 
 
 # 🤖 Create a nextcord client
